@@ -52,7 +52,13 @@ const Customizer = () => {
             {...slideAnimation("up")}
           >
             {FilterTabs.map((tab, index) => (
-              <Tab key={tab.name} tab={tab} handleClick={() => {}} />
+              <Tab
+                key={tab.name}
+                tab={tab}
+                isFilterTab=""
+                isActiveTab=""
+                handleClick={() => {}}
+              />
             ))}
           </motion.div>
         </>
